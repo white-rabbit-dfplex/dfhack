@@ -10,6 +10,9 @@
 [submodule "depends/clsocket"]
 	path = depends/clsocket
 	url = ../../DFHack/clsocket.git
+[submodule "plugins/dfplex"]
+	path = plugins/dfplex
+	url = ../dfplex
 [submodule "scripts2"]
 	path = scripts
 	url = ../../DFHack/scripts.git

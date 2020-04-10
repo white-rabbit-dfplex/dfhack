@@ -184,6 +184,12 @@ if(BUILD_SKELETON)
     add_subdirectory(skeleton)
 endif()
 
+OPTION(BUILD_DFPLEX "Build the dwarfplex plugin" ON)
+if(BUILD_DFPLEX)
+    add_subdirectory(dfplex/server)
+endif()
+
+
 if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/CMakeLists.custom.txt")
     file(WRITE "${CMAKE_CURRENT_SOURCE_DIR}/CMakeLists.custom.txt" "# You can add custom plugins here to avoid touching plugins/CMakeLists.txt,
 # This can be useful if you've made modifications to that file and try to
